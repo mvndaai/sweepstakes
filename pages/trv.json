@@ -1,0 +1,19 @@
+{
+    "disabled": true,
+    "end": "2020-06-15",
+    "url": "https://www.travelchannel.com/sweepstakes/travel-channel-10k-giveaway",
+    "finalURL": "https://www.travelchannel.com/sweepstakes/travel-channel-10k-giveaway/thanks",
+    "pages": [
+        {
+            "inputs": [
+                {
+                    "value": "#xReturningUserEmail",
+                    "configVar": "email"
+                }
+            ],
+            "next": {
+                "value": "#xCheckUser"
+            }
+        }
+    ]
+}

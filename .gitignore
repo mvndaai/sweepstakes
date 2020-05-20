@@ -17,3 +17,6 @@ vendor/
 
 # Config to not share personal information
 config.json
+
+#Remove the chromedriver
+drivers/chromedriver
