@@ -36,5 +36,3 @@ func InitConfig(ctx context.Context) error {
 	}
 	return nil
 }
-
-// TODO use go generate to create the example config

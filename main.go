@@ -31,6 +31,7 @@ type (
 	}
 
 	page struct {
+		Iframe     element    `json:"iframe"`
 		Inputs     []input    `json:"inputs"`
 		Checkboxes []checkbox `json:"checkboxes"`
 		Next       button     `json:"next"`
@@ -210,6 +211,17 @@ func (s sweepstake) enter(ctx context.Context, seleniumURL string) error {
 	}
 
 	for _, p := range s.Pages {
+		if p.Iframe.Value != "" {
+			iframe, err := p.Iframe.FindElement(ctx, wd)
+			if err != nil {
+				return ctxerr.Wrap(ctx, err, "", "could not find iframe")
+			}
+
+			if err := wd.SwitchFrame(iframe); err != nil {
+				return ctxerr.Wrap(ctx, err, "", "could not switch to iframe")
+			}
+		}
+
 		for _, in := range p.Inputs {
 			ctx := ctxerr.SetField(ctx, "config-variable", in.ConfigVar)
 			el, err := in.FindElement(ctx, wd)
