@@ -202,10 +202,6 @@ func (s sweepstake) enter(ctx context.Context, seleniumURL string) error {
 	}
 	defer wd.Quit()
 
-	if err := wd.Refresh(); err != nil {
-		return ctxerr.QuickWrap(ctx, err)
-	}
-
 	if err := wd.Get(s.URL); err != nil {
 		return ctxerr.QuickWrap(ctx, err)
 	}
@@ -257,6 +253,12 @@ func (s sweepstake) enter(ctx context.Context, seleniumURL string) error {
 
 		if err := el.Click(); err != nil {
 			return ctxerr.Wrap(ctx, err, "", "could not click next button")
+		}
+
+		if p.Iframe.Value != "" {
+			if err := wd.SwitchFrame(nil); err != nil {
+				return ctxerr.Wrap(ctx, err, "", "could not leave iframe")
+			}
 		}
 	}
 

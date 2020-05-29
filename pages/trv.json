@@ -17,18 +17,13 @@
             }
         },
         {
-            "_iframe": {"value": "#ngxFrame172161"},
+            "iframe": {"value": "#ngxFrame172161"},
             "next": {
                 "value": "#xSecondaryForm > div.xItem.xFieldItem.buttons > div > div.xPaginationContainer > a.xPagingButton.xActionPaginate.xActionNext"
             }
         },
         {
-            "_iframe": {"value": "#ngxFrame172161"},
-            "checkboxes": [
-                {
-                    "value": "#Secondary_quizsingleanswer_17Wrapper > div.xFieldItem.xControlQuestion.xAnswerSingle.xQuestionMediacard > div > div.xAnswerContainer > div:nth-child(1) > input"
-                }
-            ],
+            "iframe": {"value": "#ngxFrame172161"},
             "next": {
                 "value": "#xSecondaryForm > div.xItem.xFieldItem.buttons > div > div.xActivateContainer > button"
             }
