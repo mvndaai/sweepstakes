@@ -103,6 +103,7 @@ func main() {
 			ctxerr.Handle(err)
 			continue
 		}
+		fmt.Println("successfully entered", sweep.Filename)
 		entered++
 	}
 
