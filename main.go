@@ -31,10 +31,10 @@ type (
 	}
 
 	page struct {
-		Iframe     element    `json:"iframe"`
-		Inputs     []input    `json:"inputs"`
-		Checkboxes []checkbox `json:"checkboxes"`
-		Next       button     `json:"next"`
+		Iframe element `json:"iframe"`
+		Inputs []input `json:"inputs"`
+		Clicks []click `json:"clicks"`
+		Next   button  `json:"next"`
 	}
 
 	element struct {
@@ -47,7 +47,7 @@ type (
 		ConfigVar string `json:"configVar"`
 	}
 
-	checkbox struct {
+	click struct {
 		element
 		Selected bool `json:"Selected"`
 	}
@@ -236,7 +236,7 @@ func (s sweepstake) enter(ctx context.Context, seleniumURL string) error {
 			}
 		}
 
-		for _, ch := range p.Checkboxes {
+		for _, ch := range p.Clicks {
 			el, err := ch.FindElement(ctx, wd)
 			if err != nil {
 				return ctxerr.QuickWrap(ctx, err)

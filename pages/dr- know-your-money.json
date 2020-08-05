@@ -28,13 +28,13 @@
                 }
             ],
             "_": "I need to fix the dropdown",
-            "checkboxes": [
+            "clicks": [
                 {
                    "value":"#contest-entry-form-c66bcebc-9983-46da-a303-04ef144d6fae-qualifier > option:nth-child(4)"
                 }
             ],
             "next": {
-                "value": "#contest-entry-form-c66bcebc-9983-46da-a303-04ef144d6fae > div.contest-Form-footer > button"
+                "value": "#contest-entry-form-c66bcebc-9983-46da-a303-04ef144d6fae > div.contest-Form-footer > button2"
             }
         }
     ]
