@@ -1,0 +1,40 @@
+{
+    "disabled": false,
+    "end": "2020-12-15",
+    "url": "https://www.daveramsey.com/giveaway/christmas",
+    "finalURL": "https://www.daveramsey.com/giveaway/christmas/confirmation",
+    "pages": [
+        {
+            "inputs": [
+                {
+                    "value": "input[name='first_name']",
+                    "configVar": "first-name"
+                },
+                {
+                    "value": "input[name='last_name']",
+                    "configVar": "last-name"
+                },
+                {
+                    "value": "input[name='email']",
+                    "configVar": "email"
+                },
+                {
+                    "value": "input[name='phone']",
+                    "configVar": "phone-number"
+                },
+                {
+                    "value": "input[name='postal_code']",
+                    "configVar": "zip-code"
+                }
+            ],
+            "_clicks": [
+                {
+                   "value":"#contest-entry-form-cc4955fa-5e6e-4279-b915-6e528a081c0e > div:nth-child(10)"
+                }
+            ],
+            "next": {
+                "value": "div.contest-Form-footer > button"
+            }
+        }
+    ]
+}
