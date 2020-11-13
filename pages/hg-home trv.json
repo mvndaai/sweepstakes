@@ -1,0 +1,26 @@
+{
+    "disabled": false,
+    "end": "2020-11-25",
+    "url": "https://www.travelchannel.com/sweepstakes/hgtv-urban-oasis/",
+    "finalURL": "https://www.travelchannel.com/sweepstakes/hgtv-urban-oasis/thanks",
+    "pages": [
+        {
+            "iframe": {"value": "#ngxFrame180703"},
+            "inputs": [
+                {
+                    "value": "#xReturningUserEmail",
+                    "configVar": "email"
+                }
+            ],
+            "next": {
+                "value": "#xCheckUser"
+            }
+        },
+        {
+            "iframe": {"value": "#ngxFrame180703"},
+            "next": {
+                "value": "#xSecondaryForm #xSubmitContainer > button > span"
+            }
+        }
+    ]
+}

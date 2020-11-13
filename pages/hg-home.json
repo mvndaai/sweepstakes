@@ -1,0 +1,26 @@
+{
+    "disabled": false,
+    "end": "2020-11-25",
+    "url": "https://www.hgtv.com/sweepstakes/hgtv-urban-oasis/sweepstakes/",
+    "finalURL": "https://www.hgtv.com/sweepstakes/hgtv-urban-oasis/sweepstakes/thanks",
+    "pages": [
+        {
+            "iframe": {"value": "#ngxFrame180683"},
+            "inputs": [
+                {
+                    "value": "#xReturningUserEmail",
+                    "configVar": "email"
+                }
+            ],
+            "next": {
+                "value": "#xCheckUser"
+            }
+        },
+        {
+            "iframe": {"value": "#ngxFrame180683"},
+            "next": {
+                "value": "#xSecondaryForm #xSubmitContainer > button > span"
+            }
+        }
+    ]
+}
