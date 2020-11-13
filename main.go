@@ -263,6 +263,8 @@ func (s sweepstake) enter(ctx context.Context, seleniumURL string) error {
 		}
 	}
 
+	time.Sleep(2 * time.Second)
+
 	if err := wd.WaitWithTimeout(
 		func(wd selenium.WebDriver) (bool, error) {
 			cURL, err := wd.CurrentURL()
