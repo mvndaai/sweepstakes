@@ -1,0 +1,26 @@
+{
+    "disabled": false,
+    "end": "2020-12-21",
+    "url": "https://www.foodnetwork.com/sponsored/sweepstakes/super-sweet-sweeps",
+    "finalURL": "https://www.foodnetwork.com/sponsored/sweepstakes/super-sweet-sweeps/super-sweet-sweeps-thanks",
+    "pages": [
+        {
+            "iframe": { "value": "#ngxFrame182679"},
+            "inputs": [
+                {
+                    "value": "#xReturningUserEmail",
+                    "configVar": "email"
+                }
+            ],
+            "next": {
+                "value": "#xCheckUser"
+            }
+        },
+        {
+            "iframe": { "value": "#ngxFrame182679"},
+            "next": {
+                "value": "#xSubmitContainer > button"
+            }
+        }
+    ]
+}
