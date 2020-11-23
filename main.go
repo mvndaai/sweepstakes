@@ -197,6 +197,8 @@ func (s sweepstake) enter(ctx context.Context, seleniumURL string) error {
 		return ctxerr.QuickWrap(ctx, err)
 	}
 
+	fmt.Println("Opening: ", s.URL)
+
 	wd, err := startWebdriver(ctx, seleniumURL)
 	if err != nil {
 		return ctxerr.QuickWrap(ctx, err)
