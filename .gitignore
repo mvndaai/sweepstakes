@@ -20,3 +20,5 @@ config.json
 
 #Remove the chromedriver
 drivers/chromedriver
+
+.DS_Store

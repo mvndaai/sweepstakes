@@ -1,0 +1,26 @@
+{
+    "disabled": false,
+    "end": "2021-03-24",
+    "url": "https://www.investigationdiscovery.com/crimefeed/sweepstakes/best-of-travel",
+    "finalURL": "https://www.investigationdiscovery.com/crimefeed/sweepstakes/best-of-travel/thanks",
+    "pages": [
+        {
+            "iframe": {"value": "#ngxFrame188381"},
+            "inputs": [
+                {
+                    "value": "#xReturningUserEmail",
+                    "configVar": "email"
+                }
+            ],
+            "next": {
+                "value": "#xCheckUser"
+            }
+        },
+        {
+            "iframe": {"value": "#ngxFrame188381"},
+            "next": {
+                "value": ".xSecondaryForm #xSubmitContainer > button"
+            }
+        }
+    ]
+}
