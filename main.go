@@ -172,15 +172,24 @@ func (e element) FindElement(ctx context.Context, wd selenium.WebDriver) (seleni
 	var el selenium.WebElement
 	if err := wd.WaitWithTimeout(
 		func(wd selenium.WebDriver) (bool, error) {
-			var err error
-			el, err = wd.FindElement(e.By, e.Value)
+			els, err := wd.FindElements(e.By, e.Value)
 			if err != nil {
 				if strings.Contains(err.Error(), "Unable to locate element") {
 					return false, nil
 				}
 				return false, err
 			}
-			return el.IsDisplayed()
+			for i := range els {
+				bl, err := els[i].IsDisplayed()
+				if err != nil {
+					return false, err
+				}
+				if bl {
+					el = els[i]
+					return true, nil
+				}
+			}
+			return false, nil
 		},
 		10*time.Second,
 	); err != nil {
