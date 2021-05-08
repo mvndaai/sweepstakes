@@ -1,11 +1,11 @@
 {
     "disabled": false,
-    "end": "2020-11-25",
-    "url": "https://www.travelchannel.com/sweepstakes/hgtv-urban-oasis/",
-    "finalURL": "https://www.travelchannel.com/sweepstakes/hgtv-urban-oasis/thanks",
+    "end": "2021-06-11",
+    "url": "https://www.discovery.com/sponsored/hgtv-smart-home/",
+    "finalURL": "https://www.discovery.com/sponsored/hgtv-smart-home/thanks",
     "pages": [
         {
-            "iframe": {"value": "#ngxFrame180703"},
+            "iframe": {"value": "#ngxFrame192287"},
             "inputs": [
                 {
                     "value": "#xReturningUserEmail",
@@ -17,7 +17,7 @@
             }
         },
         {
-            "iframe": {"value": "#ngxFrame180703"},
+            "iframe": {"value": "#ngxFrame192287"},
             "next": {
                 "value": "#xSecondaryForm #xSubmitContainer > button > span"
             }
